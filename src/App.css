@@ -1,38 +1,94 @@
-.App {
+body {
+  font-family: "Work Sans";
+}
+
+/* ------------------------------  Pokecard ------------------------------ */
+
+.Pokecard {
+  width: 300px;
+  padding: 10px;
+  margin: 1rem;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+}
+
+.Pokecard-title {
+  font-weight: 800;
+  font-size: large;
+}
+
+.Pokecard-frame {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Pokecard-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #eceff1;
+  border-radius: 3px;
+  margin: 1rem;
+}
+
+.Pokecard-data {
+  font-size: 80%;
+}
+
+.Pokecard img:hover {
+  transform: scale(1.25);
+  opacity: 0.7;
+}
+.Pokecard img {
+  transition: all ease 500ms;
+}
+
+/* ------------------------------ Pokedex ------------------------------------- */
+
+.Pokedex {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Pokedex-cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  flex-wrap: ok;
+  text-align: center;
+  background-color: white;
+  border-radius: 6px;
+}
+.Pokedex-expereince {
+  font-size: medium;
+  font-weight: 900;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Pokedex-score {
+  margin: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Pokedex-winner {
+  font-size: medium;
+  font-weight: 700;
+  text-align: center;
+  color: #4caf50;
+}
+
+.Pokedex-loser {
+  font-size: medium;
+  font-weight: 700;
+  text-align: center;
+  color: #e91e6e;
+}
+
+/* ------------------------------ Pokegame css ------------------------------ */
+
+.Pokegame {
+  width: auto;
+  height: auto;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
